@@ -1,0 +1,12 @@
+logging.config: classpath:logback-mcp-server.xml
+spring.application.name: test-mcp-server
+
+spring.ai.mcp.server.enabled: true
+spring.ai.mcp.server.name: test-mcp-server
+spring.ai.mcp.server.stdio: true
+spring.ai.mcp.server.type: sync
+
+server.port: 9998
+spring.main.log-startup-info: false
+logging.level.org.springframework: error
+spring.main.banner-mode: off
