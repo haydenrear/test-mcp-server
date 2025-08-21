@@ -1,6 +1,7 @@
 logging.config: classpath:logback-mcp-server.xml
 spring.application.name: test-mcp-server
 
+
 spring.ai.mcp.server.enabled: true
 spring.ai.mcp.server.name: test-mcp-server
 spring.ai.mcp.server.stdio: true
