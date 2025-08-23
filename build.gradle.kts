@@ -10,3 +10,7 @@ tasks.register("prepareKotlinBuildScriptModel") {}
 
 dependencies {
 }
+
+tasks.bootJar {
+    archiveFileName = "test-mcp-server.jar"
+}
