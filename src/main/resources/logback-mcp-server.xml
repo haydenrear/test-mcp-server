@@ -1,7 +1,7 @@
 <configuration>
     <appender name="MCP_SERVER" class="ch.qos.logback.core.FileAppender">
         <file>/Users/hayde/IdeaProjects/drools/commit-diff-context-mcp/logs/test-mcp-server.log</file>
-        <append>true</append>
+        <append>false</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
