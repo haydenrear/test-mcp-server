@@ -11,3 +11,6 @@ server.port: 9998
 spring.main.log-startup-info: false
 logging.level.org.springframework: error
 spring.main.banner-mode: off
+configs:
+  enable-mcp-test-tools: ${ENABLE_MCP_TEST_TOOLS:true}
+  enable-mcp-test-tools2: ${ENABLE_MCP_TEST_TOOLS_2:false}
