@@ -1,6 +1,7 @@
 plugins {
     id("com.hayden.mcp")
     id("com.hayden.spring-app")
+    id("com.hayden.paths")
 }
 
 group = "com.hayden"
@@ -13,4 +14,18 @@ dependencies {
 
 tasks.bootJar {
     archiveFileName = "test-mcp-server.jar"
+}
+
+tasks.compileJava {
+    dependsOn(
+        "processYmlFiles",
+        "processXmlFiles",
+    )
+}
+
+tasks.test {
+    dependsOn(
+        "processYmlFiles",
+        "processXmlFiles"
+    )
 }
