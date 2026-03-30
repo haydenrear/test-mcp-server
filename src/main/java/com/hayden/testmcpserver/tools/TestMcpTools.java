@@ -1,5 +1,7 @@
 package com.hayden.testmcpserver.tools;
 
+import org.springaicommunity.mcp.annotation.McpTool;
+import org.springaicommunity.mcp.annotation.McpToolParam;
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.ai.tool.annotation.ToolParam;
 import org.springframework.stereotype.Component;
@@ -8,7 +10,8 @@ import org.springframework.stereotype.Component;
 public class TestMcpTools {
 
     @Tool(description = "Some tool")
-    public String doSomething(@ToolParam String aTool) {
+    @McpTool(description = "Some tool")
+    public String doSomething(@ToolParam @McpToolParam String aTool) {
         return "did something!";
     }
 
